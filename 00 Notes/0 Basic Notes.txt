@@ -1,0 +1,14 @@
+SQL is language used to interact with relational databases.
+
+we can use SQL to 
+    select data from tables
+    insert new records
+    update existing data
+    delete records 
+    create and manage tables 
+
+Example :: 
+    SELECT * FROM customers WHERE country = "India";
+here * means all the columns
+
+RDBMS = Relational Database Management System

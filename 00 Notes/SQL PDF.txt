@@ -1,0 +1,475 @@
+Here is **all the important content extracted from your PDF**, fully cleaned, structured, and organized.
+Everything includes: **commands, tables, definitions, descriptions, syntax, examples, and notes**.
+
+---
+
+# ✅ **SQL NOTES – CLEAN & COMPLETE EXTRACTION**
+
+---
+
+# **📌 Introduction**
+
+### **What is a Database?**
+
+* A database is a collection of digital data organized for easy access.
+* DBMS (Database Management System) is software that helps manage databases.
+
+### **Types of Databases**
+
+| Relational (SQL)      | Non-Relational (NoSQL)                |
+| --------------------- | ------------------------------------- |
+| Data stored in tables | Data NOT stored in tables             |
+| SQL used to manage    | Uses other formats & querying methods |
+
+---
+
+# **📌 What is SQL?**
+
+**SQL (Structured Query Language)** is a programming language used to interact with relational databases.
+Used for **CRUD**:
+
+* **C**reate
+* **R**ead
+* **U**pdate
+* **D**elete
+
+---
+
+# **📌 Database Structure**
+
+* A database contains multiple tables.
+* Each table contains rows (records) and columns (fields).
+
+---
+
+# **📌 Creating & Dropping Databases**
+
+```sql
+CREATE DATABASE db_name;
+DROP DATABASE db_name;
+
+SHOW DATABASES;
+SHOW TABLES;
+
+CREATE DATABASE IF NOT EXISTS db_name;
+DROP DATABASE IF EXISTS db_name;
+```
+
+---
+
+# **📌 Creating a Table**
+
+```sql
+CREATE TABLE table_name ( 
+    column_name1 datatype constraint,
+    column_name2 datatype constraint
+);
+
+USE db_name;
+```
+
+---
+
+# **📌 SQL Datatypes**
+
+Examples:
+
+* `TINYINT` : -128 to 127
+* `TINYINT UNSIGNED`: 0 to 255
+* `INT`, `BIGINT`, `VARCHAR(n)`, `TEXT`, `DATE`, `FLOAT`, etc.
+
+---
+
+# **📌 SQL Command Types**
+
+| Type    | Meaning             | Commands                              |
+| ------- | ------------------- | ------------------------------------- |
+| **DDL** | Data Definition     | CREATE, ALTER, DROP, TRUNCATE, RENAME |
+| **DML** | Data Manipulation   | INSERT, UPDATE, DELETE                |
+| **DQL** | Data Query          | SELECT                                |
+| **DCL** | Data Control        | GRANT, REVOKE                         |
+| **TCL** | Transaction Control | COMMIT, ROLLBACK, START TRANSACTION   |
+
+---
+
+# **📌 Insert Data**
+
+```sql
+INSERT INTO table_name (col1, col2)
+VALUES 
+(value1, value2),
+(value1, value2);
+```
+
+---
+
+# **📌 SELECT Query**
+
+### Select specific columns:
+
+```sql
+SELECT col1, col2 FROM table_name;
+```
+
+### Select all:
+
+```sql
+SELECT * FROM table_name;
+```
+
+---
+
+# **📌 WHERE Clause**
+
+Used to filter data.
+
+```sql
+SELECT col1, col2 
+FROM table_name
+WHERE condition;
+```
+
+### Operators:
+
+#### **Arithmetic:**
+
+`+  -  *  /  %`
+
+#### **Comparison:**
+
+`=  !=  >  >=  <  <=`
+
+#### **Logical:**
+
+`AND  OR  NOT  IN  BETWEEN  LIKE  ANY  ALL`
+
+#### **Bitwise:**
+
+`&  |`
+
+---
+
+# **📌 LIMIT**
+
+```sql
+SELECT * FROM table_name LIMIT number;
+```
+
+---
+
+# **📌 ORDER BY**
+
+```sql
+SELECT * 
+FROM table_name
+ORDER BY col_name ASC;
+```
+
+Or:
+
+```sql
+ORDER BY col_name DESC;
+```
+
+---
+
+# **📌 Aggregate Functions**
+
+| Function  | Use           |
+| --------- | ------------- |
+| `COUNT()` | count rows    |
+| `MAX()`   | maximum value |
+| `MIN()`   | minimum value |
+| `SUM()`   | sum           |
+| `AVG()`   | average       |
+
+Example:
+
+```sql
+SELECT AVG(marks) FROM student;
+SELECT MAX(marks) FROM student;
+```
+
+---
+
+# **📌 GROUP BY**
+
+Groups rows with same values.
+
+```sql
+SELECT city, COUNT(*)
+FROM student
+GROUP BY city;
+```
+
+---
+
+# **📌 HAVING**
+
+Used after GROUP BY (unlike WHERE).
+
+```sql
+SELECT city, COUNT(*)
+FROM student
+GROUP BY city
+HAVING COUNT(*) > 5;
+```
+
+---
+
+# **📌 SQL Query Execution Order**
+
+```
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+```
+
+---
+
+# **📌 UPDATE**
+
+```sql
+UPDATE table_name 
+SET col1 = val1, col2 = val2
+WHERE condition;
+```
+
+---
+
+# **📌 DELETE**
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+---
+
+# **📌 TRUNCATE (delete all rows)**
+
+```sql
+TRUNCATE TABLE table_name;
+```
+
+---
+
+# **📌 ALTER TABLE**
+
+### Add Column:
+
+```sql
+ALTER TABLE table_name 
+ADD COLUMN col_name datatype;
+```
+
+### Drop Column:
+
+```sql
+ALTER TABLE table_name 
+DROP COLUMN col_name;
+```
+
+### Rename Table:
+
+```sql
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
+
+### Modify datatype:
+
+```sql
+ALTER TABLE table_name
+MODIFY col_name new_datatype;
+```
+
+### Change column name:
+
+```sql
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name datatype;
+```
+
+---
+
+# **📌 Keys**
+
+### **Primary Key (PK)**
+
+* Uniquely identifies each row
+* Only one PK per table
+* Cannot be null
+
+### **Foreign Key (FK)**
+
+* References primary key of another table
+* Can be duplicate or null
+* Multiple FKs allowed
+
+---
+
+# **📌 Constraints**
+
+* **NOT NULL** → cannot be null
+* **UNIQUE** → all values must differ
+* **PRIMARY KEY** → unique + not null
+* **FOREIGN KEY** → refer other table
+* **DEFAULT** → default value
+* **CHECK** → restricts values
+
+---
+
+# **📌 Cascading**
+
+### On Delete Cascade:
+
+Deletes child rows when parent row is deleted.
+
+### On Update Cascade:
+
+Updates child rows when parent key is updated.
+
+---
+
+# **📌 JOINS**
+
+Join → combines rows of two tables based on related column.
+
+### Types:
+
+* **INNER JOIN**
+* **LEFT JOIN**
+* **RIGHT JOIN**
+* **FULL JOIN**
+* **SELF JOIN**
+* **UNION (unique records)**
+
+---
+
+# **📌 Inner Join**
+
+```sql
+SELECT *
+FROM tableA
+INNER JOIN tableB
+ON tableA.col = tableB.col;
+```
+
+---
+
+# **📌 Left Join**
+
+```sql
+SELECT *
+FROM tableA
+LEFT JOIN tableB
+ON tableA.col = tableB.col;
+```
+
+---
+
+# **📌 Right Join**
+
+```sql
+SELECT *
+FROM tableA
+RIGHT JOIN tableB
+ON tableA.col = tableB.col;
+```
+
+---
+
+# **📌 Full Join (MySQL workaround)**
+
+```sql
+SELECT * FROM tableA
+LEFT JOIN tableB ON A.id = B.id
+UNION
+SELECT * FROM tableA
+RIGHT JOIN tableB ON A.id = B.id;
+```
+
+---
+
+# **📌 Exclusive Joins**
+
+Right exclusive = right join – inner join
+Left exclusive = left join – inner join
+
+---
+
+# **📌 Self Join**
+
+```sql
+SELECT a.col, b.col
+FROM table AS a
+JOIN table AS b
+ON a.col = b.col;
+```
+
+---
+
+# **📌 UNION**
+
+```sql
+SELECT col FROM tableA
+UNION
+SELECT col FROM tableB;
+```
+
+Requirements:
+
+* Same number of columns
+* Same datatype
+* Same order
+
+---
+
+# **📌 Subqueries**
+
+#### Basic syntax:
+
+```sql
+SELECT col
+FROM table
+WHERE col operator
+    (SELECT col FROM table WHERE ...);
+```
+
+### Example:
+
+Students scoring above class average:
+
+```sql
+SELECT name 
+FROM student
+WHERE marks > (SELECT AVG(marks) FROM student);
+```
+
+---
+
+# **📌 Views**
+
+A **View** is a virtual table based on a SELECT query.
+
+```sql
+CREATE VIEW view_name AS
+SELECT col1, col2 FROM table;
+```
+
+---
+
+# ✅ **Extraction Completed**
+
+If you'd like, I can also create:
+✔ A **clean PDF**
+✔ A **text file**
+✔ A **formatted cheat-sheet**
+✔ A **markdown version**
+✔ A **flashcard version**
+
+Just tell me!

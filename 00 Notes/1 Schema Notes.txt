@@ -1,0 +1,13 @@
+Schema = is a blueprint for database 
+CREATE SCHEMA university
+
+CREATE TABLE university.students ( 
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+
+CREATE TABLE university.courses (
+    id SERIAL PRIMARY KEY,
+    course_name VARCHAR(100)
+);

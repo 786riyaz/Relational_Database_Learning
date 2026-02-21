@@ -1,0 +1,28 @@
+SQL = Structured Query Language :: Store and Query Data 
+==================================================================================================
+==================================================================================================
+==================================================================================================
+Popular System of SQL ::: Relational Database
+Stores data in tabular format
+
+Relational (SQL) Database List :::
+MySQL           :: Web Development
+PostgreSQL      :: Complex Queries
+SQL Server      :: Enterprises
+SQLite          :: Lightweight, file based
+Oracle          :: Enterprises with Advanced Features
+
+
+==================================================================================================
+==================================================================================================
+==================================================================================================
+Popular System of Non SQL ::: Non Relational Database
+store data as documents, key-value pairs, graphs 
+
+Non-Relational (No-SQL) Database List :::
+MongoDB
+Cassandra
+Redis
+Neo4j
+DynamoDB
+Firebase
