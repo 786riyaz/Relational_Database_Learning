@@ -1,0 +1,76 @@
+https://www.youtube.com/watch?v=blkZ6APzT8Q
+
+00:00:00 - Intro  
+00:00:58 1.What is Data? What is Structured Data?  
+00:04:54 2.How to keep structured data?  
+00:07:24 3.Why SQL is needed?  
+00:11:14 4.SQL vs Excel. When to use?  
+00:15:42 5.What is a Database?  
+00:18:35 6.Relational vs Non-Relational Databases  
+00:24:39 7.What is SQL?  
+00:28:56 8.Overview of RDBMS (MySQL, PostgreSQL, SQLite, SQLServer, Oracle)  
+00:31:44 9.SQL vs No-SQL  
+00:40:25 10.What is Schema  
+00:43:05 11.Install MySQL and MySQL Workbench in MacOS  
+00:53:21 12.Install MySQL and MySQL Workbench in Windows  
+01:01:19 13.Install Xampp (for MySQL) in MacOS  
+01:06:04 14.Install Xampp (for MySQL) in Windows  
+01:13:51 15.Install SQLITE (DB Browser) in MacOS  
+01:19:19 16.Install SQLite (DB Browser) in Windows  
+01:23:45 17.Install PostgreSQL in MacOS  
+01:30:45 18.Install PostgreSQL (pgadmin) in Windows  
+01:38:31 19.Why Normalise data_ Real world analogy with examples.  
+01:47:21 20.Understanding 1NF, 2NF, 3NF, BCNF with examples  
+02:02:48 21.What is ER diagram_ Understand Entities, Attributes, Relationships, Keys  
+02:10:25 22.Relationship Types - ER Diagram  
+02:26:35 23.Basic SQL commands with Real World Examples  
+02:56:50 24.WHERE clause operators - Basic SQL commands  
+03:18:32 25.Data Types in SQL  
+03:29:07 26.Create a Table - Table Operations  
+03:36:57 27.Create Table with on Delete Rules  
+03:42:29 28.Alter a Table - Table Operations  
+03:48:43 29.Drop a Table - Table Operations  
+03:50:00 30.Truncate a Table - Table Operations  
+03:50:30 31.SQL Constraints  
+03:56:43 32.DML - Insert, Update, Delete, Replace, Truncate Records in a Table  
+04:09:53 33.Testing CRUD in PostgreSQL  
+04:12:21 34.What is JOIN in SQL_ Why use JOIN_ with practical examples  
+04:33:19 35.INNER JOIN  
+04:36:34 36.LEFT JOIN  
+04:44:08 37.RIGHT JOIN  
+04:52:05 38.FULL OUTER JOIN  
+04:59:08 39.SELF JOIN  
+05:01:27 40.CROSS JOIN  
+05:09:11 41.JOIN vs Subquery  
+05:15:19 42.JOIN Practice Problems  
+05:19:40 43.Aggregation Functions and Group By  
+05:47:19 44.What is Having Clause? Having vs Where  
+05:53:51 45.Using Aggregates with JOINs and Practice Problems  
+05:57:20 46.Subqueries in SELECT, WHERE, FROM  
+06:10:42 47.IN, NOT IN, EXISTS with Subqueries  
+06:23:37 48.ANY, ALL with Subqueries  
+06:35:41 49.Views in SQL  
+06:41:34 50.Indexes in SQL  
+06:46:21 51.Types of Indexes  
+06:55:41 52.Performance Tips, Query Planning and Practice Problems  
+07:04:17 53.What is Transaction, SAVEPOINT, ROLLBACK TO with examples  
+07:25:19 54.ACID Principles in Transaction  
+07:36:12 55.Stored Procedure in SQL  
+08:00:14 56.Triggers in SQL  
+08:13:44 57.User Defined Functions (UDFs)  
+08:31:37 58.Practice Problems and Real-World Use Cases  
+08:38:44 59.Window Functions  
+09:04:40 60.Practice Problems  
+09:07:50 61.Why use Window Functions?  
+09:09:06 62.Common Table Expression (CTE) and Recursion  
+09:30:19 63.Create USER, ROLES, GRANT and REVOKE - Security and Access Control  
+09:44:13 64.SQL Injection and Parameterised Queries  
+09:47:41 65.Hashing and Encrypting Passwords  
+09:53:14 66.RBAC  
+10:03:12 67.E-commerce Orders System Project  
+10:34:24 68.Practice Projects Queries  
+10:40:39 69.Hospital Appointment System Project  
+10:47:36 70.School Management System Project  
+10:57:16 71.Book Store Project  
+11:03:46 72.Online Food Delivery Project and Bonus Exercises  
+11:21:01 73.Interview Based Questions and Concepts
