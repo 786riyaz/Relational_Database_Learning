@@ -1,1 +1,16 @@
 mysql -u root -p
+
+mysql --version
+mysql -V
+where mysql
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --version
+mysql -u root -p
+mysql -u root -padmin123
+SHOW DATABASES;
+exit;
+quit;
+
+
+net start MySQL80
+net stop MySQL80
+sc query MySQL80
